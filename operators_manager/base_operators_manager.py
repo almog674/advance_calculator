@@ -6,7 +6,7 @@ Date: 01/10/2022
 """
 from typing import Tuple
 
-from custom_operator import Operator
+from operators_manager.custom_operator import Operator
 
 
 class BaseOperatorsManager:

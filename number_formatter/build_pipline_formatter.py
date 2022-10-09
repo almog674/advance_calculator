@@ -4,7 +4,7 @@ Author: Almog Maimon
 Purpose: Helps you build to pipline formatter with ease.
 Date: 04/10/2022
 """
-from constants import Pipelines
+from utils.constants import Pipelines
 from number_formatter.base_build_pipline_formatter import BaseBuildPiplineFormatter
 from number_formatter.format_functions import format_negative_number, round_number, handle_scientific_notation, \
     replace_special_minus_notation

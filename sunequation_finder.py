@@ -6,7 +6,7 @@ Date: 01/10/2022
 """
 from typing import Tuple, List
 
-from custom_operator import Operator
+from operators_manager.custom_operator import Operator
 from operators_manager.base_operators_manager import BaseOperatorsManager
 from parenthesis_handler.abstract_parenthesis_handler import AbstractParenthesisHandler
 

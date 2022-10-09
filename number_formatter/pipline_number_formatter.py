@@ -1,6 +1,6 @@
 from typing import Callable
 
-from constants import Pipelines
+from utils.constants import Pipelines
 from number_formatter.Stage import Stage
 from number_formatter.base_number_formatter import BaseNumberFormatter
 

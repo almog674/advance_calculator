@@ -6,7 +6,7 @@ Date: 01/10/2022
 """
 from typing import Tuple
 
-from custom_operator import Operator
+from operators_manager.custom_operator import Operator
 from number_formatter.base_number_formatter import BaseNumberFormatter
 from sunequation_finder import SubequationFinder
 

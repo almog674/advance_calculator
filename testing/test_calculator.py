@@ -5,9 +5,9 @@ from parenthesis_handler.parenthesis_handler import ParenthesisHandler
 from parenthesis_handler.parenthesis_validator import ParenthesisValidator
 
 from calculator import Calculator
-from constants import SPECIAL_OPERATORS
-from custom_operator import Operator
-from math_operations import get_min, get_mean, get_max, modulu, factorial, power, multiply, divide, addition, \
+from utils.constants import SPECIAL_OPERATORS
+from operators_manager.custom_operator import Operator
+from utils.math_operations import get_min, get_mean, get_max, modulu, factorial, power, multiply, divide, addition, \
     subtraction
 from number_formatter.build_pipline_formatter import BuildPiplineFormatter
 from operators_manager.operators_manager import DictOperationsManager

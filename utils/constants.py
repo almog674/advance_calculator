@@ -11,6 +11,7 @@ class Operators:
     ADDITION = "+"
     SUBTRATION = "-"
 
+
 class Notations:
     SCIENTIFIC = "e"
     POINT = "."
