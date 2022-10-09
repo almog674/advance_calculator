@@ -45,8 +45,10 @@ def test_calculation_two_steps(calculator: Calculator):
 def test_calculation_parenthesis(calculator: Calculator):
     assert calculator.calculate("5/(4-3)*2") == "10.0"
 
+
 def test_calculation_double_parenthesis(calculator: Calculator):
     assert calculator.calculate("5/(4-(3+2))*2") == "~10.0"
+
 
 def test_calculation_parenthesis_complex(calculator: Calculator):
     assert calculator.calculate("5/(4-(3+2))*(2-3)/(2^3)") == "0.625"
