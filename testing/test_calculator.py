@@ -35,3 +35,11 @@ def test_calculation_parenthesis_complex(calculator: Calculator):
 
 def test_calculation_with_floats(calculator: Calculator):
     assert calculator.calculate("1.342*5.32-(23.1/42.12)") == "6.58"
+
+
+def test_unery_operators(calculator: Calculator):
+    assert calculator.calculate("!5") == "125"
+
+
+def test_complex_statement_with_unery(calculator: Calculator):
+    assert calculator.calculate("5*!5/(7-2)") == "125"
