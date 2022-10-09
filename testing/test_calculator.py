@@ -1,5 +1,6 @@
 import pytest
 import change_path_for_testing
+from calculator_builder.calculator_builder import CalculatorBuilder
 
 from parenthesis_handler.parenthesis_handler import ParenthesisHandler
 from parenthesis_handler.parenthesis_validator import ParenthesisValidator
@@ -18,20 +19,10 @@ from sunequation_finder import SubequationFinder
 @pytest.fixture(scope="module")
 def calculator():
     """Creates a basic calculator for the test."""
-    operators = {'&': Operator("&", get_min, 5, "binary"), '$': Operator("$", get_max, 5, "binary"),
-                 '@': Operator("@", get_mean, 5, "binary"), '%': Operator("%", modulu, 4, "binary"),
-                 '!': Operator("!", factorial, 4, "unery"), '^': Operator("^", power, 3, "binary"),
-                 '*': Operator("*", multiply, 2, "binary"), '/': Operator("/", divide, 2, "binary"),
-                 '+': Operator("+", addition, 1, "binary"), '-': Operator("-", subtraction, 1, "binary")}
+    calculator_builder = CalculatorBuilder()
+    calculator = calculator_builder.build_calculator()
 
-    operations_manager = DictOperationsManager(operators)
-    numbers_formatter_builder = BuildPiplineFormatter()
-    numbers_formatter = numbers_formatter_builder.build_pipline_formatter()
-
-    parenthesis_handler = ParenthesisHandler(ParenthesisValidator())
-    subequation_finder = SubequationFinder(operations_manager, parenthesis_handler, SPECIAL_OPERATORS)
-    statements_solver = StatementsSolver(subequation_finder, numbers_formatter)
-    return Calculator(statements_solver)
+    return calculator
 
 
 def test_basic_calculation(calculator: Calculator):
