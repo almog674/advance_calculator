@@ -1,19 +1,7 @@
 import pytest
-import change_path_for_testing
-from calculator_builder.calculator_builder import CalculatorBuilder
-
-from parenthesis_handler.parenthesis_handler import ParenthesisHandler
-from parenthesis_handler.parenthesis_validator import ParenthesisValidator
 
 from calculator import Calculator
-from utils.constants import SPECIAL_OPERATORS
-from operators_manager.custom_operator import Operator
-from utils.math_operations import get_min, get_mean, get_max, modulu, factorial, power, multiply, divide, addition, \
-    subtraction
-from number_formatter.build_pipline_formatter import BuildPiplineFormatter
-from operators_manager.operators_manager import DictOperationsManager
-from statements_solver import StatementsSolver
-from sunequation_finder import SubequationFinder
+from calculator_builder.calculator_builder import CalculatorBuilder
 
 
 @pytest.fixture(scope="module")
