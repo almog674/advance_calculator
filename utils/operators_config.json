@@ -1,0 +1,73 @@
+{
+  "advance_calculator": {
+    "name": "advance_calculator",
+    "filenames": {
+      "operators": "utils/math_operations.py",
+      "constants": "utils/constants.py",
+      "operators_manager": "operators_manager/operators_manager.py"
+    },
+    "operators_manager": "DictOperationsManager",
+    "operators": {
+      "&": [
+        "min",
+        "get_min",
+        5,
+        "binary"
+      ],
+      "$": [
+        "$",
+        "get_max",
+        5,
+        "binary"
+      ],
+      "@": [
+        "@",
+        "get_mean",
+        5,
+        "binary"
+      ],
+      "%": [
+        "%",
+        "modulu",
+        4,
+        "binary"
+      ],
+      "!": [
+        "!",
+        "factorial",
+        4,
+        "unery"
+      ],
+      "^": [
+        "^",
+        "power",
+        3,
+        "binary"
+      ],
+      "*": [
+        "*",
+        "multiply",
+        2,
+        "binary"
+      ],
+      "/": [
+        "/",
+        "divide",
+        2,
+        "binary"
+      ],
+      "+": [
+        "+",
+        "addition",
+        1,
+        "binary"
+      ],
+      "-": [
+        "-",
+        "subtraction",
+        1,
+        "binary"
+      ]
+    }
+  }
+}
